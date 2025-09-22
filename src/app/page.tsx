@@ -9,15 +9,19 @@ const mockImages = mockUrls.map((url, index) => ({
 
 export default function HomePage() {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-			<div className="flex flex-wrap gap-4">{
+		<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#D4C5E2] to-[#48639C] text-white">
+			<div className="text-blue-500 text-center underline italic border-4 border-green-800 -rotate-180">
+				<h1>
+			this is blue birb
+				</h1>	
+				{
       			mockImages.map((image) => (
         	<div key ={image.id} className="w-48">
           	<img src={image.url} alt="image" />
         	</div>
-      ))
-    }
-    </div>
+      			))
+    			}
+    		</div>
 		</main>
 	);
 }

@@ -15,11 +15,16 @@ const geist = Geist({
 });
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{ children: React.ReactNode }>) {
-	return (
-		<html lang="en" className={`${geist.variable}`}>
-			<body>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={`${geist.variable}`}>
+        <div className="w-full text-purple-900 bg-gradient-to-b from-[#AEA4BF] to-[#E3E4DB]"> Types of Birbs in the Wild</div>
+        {children}
+      </body>
+    </html>
+  );
 }
+
+
